@@ -4,21 +4,27 @@ import style from './Services.module.css';
 
 const Services = () => (
   <>
-    <div className={style['container']}>
-      <div className={style['steps']}>
-        <div className={style['steps--title']}>
+    <div className={style['services-container']}>
+      <div className={style['services-steps']}>
+        <div className={style['services-steps--title']}>
           <h1>Services</h1>
         </div>
-        <div className={style['steps--content']}>
-          <div className={style['steps--steps']}>
-            <div className={style['steps--box']}>
-              <div className={style['steps--header']}>
-                <h3 className={style['steps--heading']}>
+        <div className={style['services-steps--content']}>
+          <div className={style['services-steps--steps']}>
+            <div className={style['services-steps--box']}>
+              <div
+                className={style['services-steps--header']}
+              >
+                <h3
+                  className={
+                    style['services-steps--heading']
+                  }
+                >
                   Full stack development
                 </h3>
               </div>
 
-              <p className={style['steps--text']}>
+              <p className={style['services-steps--text']}>
                 "Full stack" is the term we use for websites
                 like facebook, google, or amazon. These
                 sites use databases to store their
@@ -28,27 +34,39 @@ const Services = () => (
               </p>
               <p>Starting at $60/hour.</p>
             </div>
-            <div className={style['steps--box']}>
-              <div className={style['steps--header']}>
-                <h3 className={style['steps--heading']}>
+            <div className={style['services-steps--box']}>
+              <div
+                className={style['services-steps--header']}
+              >
+                <h3
+                  className={
+                    style['services-steps--heading']
+                  }
+                >
                   Static web development
                 </h3>
               </div>
 
-              <p className={style['steps--text']}>
+              <p className={style['services-steps--text']}>
                 Static websites are simple, fast sites. They
                 are great for portfolios and landing pages.
               </p>
               <p>Starting at $2000.</p>
             </div>
-            <div className={style['steps--box']}>
-              <div className={style['steps--header']}>
-                <h3 className={style['steps--heading']}>
+            <div className={style['services-steps--box']}>
+              <div
+                className={style['services-steps--header']}
+              >
+                <h3
+                  className={
+                    style['services-steps--heading']
+                  }
+                >
                   Maintainence/Optimization
                 </h3>
               </div>
 
-              <p className={style['steps--text']}>
+              <p className={style['services-steps--text']}>
                 Is your current website working extremely
                 slow, or not working at all? Studies have
                 shown that if your audience isn't engaged
@@ -59,14 +77,20 @@ const Services = () => (
               </p>
               <p>Starting at $40/hr.</p>
             </div>
-            <div className={style['steps--box']}>
-              <div className={style['steps--header']}>
-                <h3 className={style['steps--heading']}>
+            <div className={style['services-steps--box']}>
+              <div
+                className={style['services-steps--header']}
+              >
+                <h3
+                  className={
+                    style['services-steps--heading']
+                  }
+                >
                   Emergency Repairs
                 </h3>
               </div>
 
-              <p className={style['steps--text']}>
+              <p className={style['services-steps--text']}>
                 We all know accidents happen, no matter the
                 cause, I am happy to look through your site
                 and fix any problems no matter the time. I
@@ -78,12 +102,16 @@ const Services = () => (
             </div>
           </div>
         </div>
-        <div className={style['steps--contact']}>
-          <h2 className={style['contact--heading']}>
+        <div className={style['services-steps--contact']}>
+          <h2
+            className={style['services-contact--heading']}
+          >
             Schedule a meeting now!
           </h2>
           <Link href="/contact">
-            <button className={style['contact--button']}>
+            <button
+              className={style['services-contact--button']}
+            >
               Contact
             </button>
           </Link>
