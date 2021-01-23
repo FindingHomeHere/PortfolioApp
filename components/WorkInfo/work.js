@@ -5,7 +5,7 @@ export const Background = styled.div`
   display: flex;
   min-height: 100vh;
   height: contain;
-  padding: 8rem 7rem 4rem 7rem;
+  padding: 8rem 0 4rem 0;
   justify-content: center;
   align-items: center;
   background-color: var(--background-dark);
@@ -17,11 +17,15 @@ export const Card = styled.div`
   background: rgba(255, 255, 255, 0.7);
   border-radius: 1rem;
   align-items: center;
+  justify-content: space-between;
   padding: 2rem 0;
   width: 80vw;
   min-height: contain;
   -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  @media screen and (max-width: 800px) {
+    width: 90vw;
+  }
 `;
 
 export const Title = styled.h1`
@@ -39,10 +43,13 @@ export const Title = styled.h1`
 
 export const Grid = styled.div`
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
   gap: 30px 30px;
   width: 97%;
+  @media screen and (max-width: 800px) {
+    grid-template-columns: auto;
+  }
 `;
 
 export const WorkContainer = styled.div`
@@ -86,7 +93,8 @@ export const Contact = styled.h1`
   font-size: 2.5rem;
   background: white;
   border-radius: 1rem;
-  margin: 0;
+  margin-top: 1rem;
+  margin-bottom: 0;
   padding: 1.5rem;
   width: 97%;
   text-align: center;

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import { DiReact, DiHtml5, DiCss3 } from 'react-icons/di';
 
-import { SiJavascript } from 'react-icons/si';
+import { SiJavascript, SiNextDotJs } from 'react-icons/si';
 
 export const ContentCard = styled.div`
   display: flex;
@@ -23,12 +23,19 @@ export const HeadingContainer = styled.section`
   border-radius: 1rem;
   -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  @media screen and (max-width: 800px) {
+    width: 100vw;
+    border-radius: 0;
+  }
 `;
 
 export const HeadingContent = styled.h1`
   font-size: 4.5em;
   color: var(--base-color-primary);
   font-family: 'Lato', sans-serif;
+  @media screen and (max-width: 800px) {
+    font-size: 3.5rem;
+  }
 `;
 
 export const ContentContainer = styled.div`
@@ -44,6 +51,10 @@ export const ContentContainer = styled.div`
   border-radius: 1rem;
   -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  @media screen and (max-width: 800px) {
+    width: 100vw;
+    border-radius: 0;
+  }
 `;
 
 export const HeadingSection = styled.h2`
@@ -68,13 +79,13 @@ export const ContentSection = styled.p`
   }
 
   @media screen and (max-width: 800px) {
-    width: 80vw;
+    width: 90vw;
   }
 `;
 
 export const LanguageSection = styled.div`
   display: flex;
-  max-width: 680px;
+  width: contain;
   justify-content: space-around;
   align-items: center;
   box-sizing: border-box;
@@ -93,6 +104,10 @@ export const LanguageSection = styled.div`
 //   font-size: 3rem;
 // `;
 
+export const Next = styled(SiNextDotJs)`
+  font-size: 3.5rem;
+  color: #000;
+`;
 export const React = styled(DiReact)`
   font-size: 3.5rem;
   color: #61dbfb;

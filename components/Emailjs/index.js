@@ -13,25 +13,25 @@ export default function ContactUs() {
       : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
   };
 
-  function sendEmail(e) {
-    e.preventDefault();
+  // function sendEmail(e) {
+  //   e.preventDefault();
 
-    emailjs
-      .sendForm(
-        'service_xmkd70f',
-        'template_contact_form',
-        e.target,
-        'user_yDEiAiMLkj4IOhDcHFLZS'
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  }
+  //   emailjs
+  //     .sendForm(
+  //       'service_xmkd70f',
+  //       'template_contact_form',
+  //       e.target,
+  //       'user_yDEiAiMLkj4IOhDcHFLZS'
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text);
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //       }
+  //     );
+  // }
 
   return (
     <div className={style['contact-div']}>
@@ -46,10 +46,17 @@ export default function ContactUs() {
           </p>
         </div>
         <form
+          method="POST"
+          data-netlify="true"
+          name="contact"
           className={style['contact-form']}
           onSubmit={sendEmail}
         >
-          <input type="hidden" name="contact_number" />
+          <input
+            type="hidden"
+            name="form-name"
+            value="contact"
+          />
           <div className={style['form']}>
             <input
               type="text"

@@ -65,7 +65,7 @@ const AboutContent = () => (
               </div>
 
               <p className={style['steps--text']}>
-                upon approval of the design, the develoment
+                Upon approval of the design, the develoment
                 stage begins. Implementing each part of a
                 website varies in time, and a timeline will
                 be drafted during the discover process.

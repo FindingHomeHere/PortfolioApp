@@ -7,6 +7,7 @@ import {
   ContentSection,
   LanguageSection,
   LanguageButton,
+  Next,
   React,
   Css,
   Html,
@@ -43,16 +44,20 @@ const IndexContent = () => (
               viewing would be a blank screen.
             </li>
             <li>
-              <strong>Css:</strong> The style for every
+              <strong>CSS:</strong> The style for every
               internet application.
             </li>
             <li>
-              <strong>Html:</strong> The 'Bare-bones'
+              <strong>HTML:</strong> The 'Bare-bones'
               building block for all websites.
             </li>
           </ul>
         </ContentSection>
         <LanguageSection>
+          <LanguageButton>
+            <Next />
+            <LanguageName>Next.js</LanguageName>
+          </LanguageButton>
           <LanguageButton>
             <React />
             <LanguageName>React</LanguageName>
