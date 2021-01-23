@@ -14,40 +14,25 @@ import {
   SocialLabel,
 } from './SidebarElements';
 
-const routes = [
-  {
-    link: '/',
-    name: 'Home',
-  },
-  {
-    link: '/about',
-    name: 'About',
-  },
-  {
-    link: '/work',
-    name: 'Work',
-  },
-  {
-    link: '/contact',
-    name: 'Contact',
-  },
-];
-
 const Sidebar = ({ isOpen, toggle }) => {
   const routes = [
     {
+      id: 1,
       link: '/',
       name: 'Home',
     },
     {
+      id: 2,
       link: '/about',
       name: 'About',
     },
     {
+      id: 3,
       link: '/work',
       name: 'Work',
     },
     {
+      id: 4,
       link: '/contact',
       name: 'Contact',
     },
@@ -62,7 +47,7 @@ const Sidebar = ({ isOpen, toggle }) => {
         <SideBarMenu>
           {routes.map((el) => {
             return (
-              <SideBarLink>
+              <SideBarLink key={el.id}>
                 <Link href={el.link}>
                   <SideBarRoute onClick={toggle}>
                     {el.name}
