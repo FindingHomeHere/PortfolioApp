@@ -3,12 +3,7 @@
   position: relative;
   height: 600px;
   width: 100%;
-  background: url('../../public/images/coffee.jpg'),
-    linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 1),
-      rgba(0, 0, 0, 0)
-    );
+  background: var(--background-dark);
   background-position: center;
   background-size: cover;
   justify-content: space-around;
@@ -18,10 +13,7 @@
   height: 100%;
   width: 100vw;
   backdrop-filter: blur(6px);
-  -moz-background-color: rgba(0, 0, 0, 0.7);
-  /* border-top: 2px solid var(--base-color-secondary); */
   border-bottom: 2px solid var(--base-color-secondary);
-  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   align-items: center;

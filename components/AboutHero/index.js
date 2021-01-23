@@ -7,11 +7,12 @@ const Hero = () => {
     <>
       <div className={styles['hero-container']}>
         <div className={styles['hero-content']}>
-          <h2 className={styles['hero-heading']}>
-            Designer || Developer
-          </h2>
+          <h1 className={styles['hero-heading']}>
+            Get Started
+          </h1>
           <p className={styles['hero-text']}>
-            Meticulous Design, Themed for you
+            Read about the process below, or get a quote
+            now!
           </p>
           <Link href="/contact">
             <button className={styles['hero-btn']}>
