@@ -1,0 +1,110 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--background-dark);
+}
+
+.steps {
+  margin: 2rem;
+  padding: 2rem;
+  max-width: 1300px;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.steps--title {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem 2rem;
+  background-color: rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+}
+
+.steps--steps {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 3rem;
+}
+
+.steps--box {
+  display: flex;
+  background-color: white;
+  min-width: 500px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.5rem;
+  margin: 1.5rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.steps--header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.steps--icon {
+  font-size: 2.2rem;
+  margin-right: 1.5rem;
+}
+
+.steps--heading {
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.steps--text {
+  font-size: 1rem;
+  text-justify: newspaper;
+  text-align: center;
+  line-height: 1.4;
+  padding: 0 4rem;
+}
+
+.steps--contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact--heading {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.contact--button {
+  font-size: 1.5rem;
+  padding: 1rem 6rem;
+  border-radius: 1rem;
+  background: white;
+  cursor: pointer;
+  color: var(--base-color-primary);
+  outline: none;
+  border: 1px solid var(--base-color-primary);
+}
+
+.contact--button:hover {
+  background: var(--base-color-primary);
+  color: white;
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 900px) {
+  .steps--steps {
+    grid-template-columns: auto;
+  }
+} ;

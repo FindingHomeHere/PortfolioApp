@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
+:root {
+  --base-color-primary: #0c213d;
+  --base-color-secondary: #c7be5d;
+  --base-color-tertiary: #88b59a;
+  --background-light: #faf6de;
+  --background-dark: #031630;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Lato', 'Open Sans', sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -13,4 +22,11 @@ a {
 
 * {
   box-sizing: border-box;
+  transition: all 0.25s ease;
+}
+.btn:hover {
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
 }

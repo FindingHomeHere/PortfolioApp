@@ -1,0 +1,79 @@
+.hero-container {
+  display: flex;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url('../../images/PJnight.jpg'),
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0)
+    );
+  background-position: center;
+  background-size: cover;
+  justify-content: space-around;
+  align-items: center;
+}
+.hero-content {
+  height: 100%;
+  width: 100vw;
+  backdrop-filter: blur(6px);
+  border-top: 2px solid var(--base-color-secondary);
+  border-bottom: 2px solid var(--base-color-secondary);
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero-heading {
+  font-size: 6rem;
+  color: white;
+}
+.hero-text {
+  font-size: 1.6rem;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+.hero-btn {
+  font-size: 1.6rem;
+  font-family: 'Open Sans', sans-serif;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(4px);
+  color: white;
+  border: 2px solid white;
+  padding: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.hero-btn:hover {
+  border: 2px solid var(--base-color-secondary);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 800px) {
+  .hero-heading {
+    font-size: 5em;
+  }
+  .hero-text {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero-heading {
+    font-size: 4em;
+  }
+  .hero-text {
+    font-size: 1em;
+  }
+  .hero-btn {
+    font-size: 1rem;
+    width: 70vw;
+  }
+}
