@@ -8,8 +8,10 @@ export default function About() {
     <>
       {/* <PageHero /> */}
       <AboutMe />
-      <AboutContent />
-      <Services />
+      <div>
+        <AboutContent />
+        <Services />
+      </div>
     </>
   );
 }
