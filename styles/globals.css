@@ -24,9 +24,3 @@ a {
   box-sizing: border-box;
   transition: all 0.25s ease;
 }
-.btn:hover {
-  -webkit-transform: translateY(-3px);
-  transform: translateY(-3px);
-  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-}
