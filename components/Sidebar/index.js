@@ -23,16 +23,11 @@ const Sidebar = ({ isOpen, toggle }) => {
     },
     {
       id: 2,
-      link: '/about',
-      name: 'About',
+      link: '/pricing',
+      name: 'Pricing',
     },
     {
       id: 3,
-      link: '/work',
-      name: 'Work',
-    },
-    {
-      id: 4,
       link: '/contact',
       name: 'Contact',
     },

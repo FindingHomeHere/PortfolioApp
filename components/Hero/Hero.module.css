@@ -32,7 +32,7 @@
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
 }
 .hero-heading {
-  font-size: 72px;
+  font-size: 60px;
   color: var(--primary-800);
 }
 .hero-text {

@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import {
   Background,
   Card,
@@ -59,7 +58,7 @@ const WorkInfo = () => {
             })}
           </Grid>
           <Contact>
-            <Link href="/contact">
+            <Link href="/pricing">
               <ContactBtn>Ready to get started?</ContactBtn>
             </Link>
           </Contact>

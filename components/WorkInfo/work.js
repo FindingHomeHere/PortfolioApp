@@ -4,9 +4,8 @@ import Image from 'next/image';
 export const Background = styled.div`
   display: flex;
   position: relative;
-  min-height: 90vh;
-  height: contain;
-  padding: 8rem 0 2rem 0;
+  // height: contain;
+  height: 690px;
   justify-content: center;
   align-items: center;
   background-color: var(--grey-300);
@@ -20,14 +19,14 @@ export const Background = styled.div`
 export const Card = styled.div`
   display: flex;
   position: relative;
+  top: -57px;
   flex-direction: column;
   background-color: var(--grey-100);
-  background-image: var(--background-texture);
   border-top: var(--border-top);
   border-radius: 1rem;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
   width: 80vw;
   min-height: contain;
   -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
@@ -42,16 +41,16 @@ export const Card = styled.div`
 
 export const Title = styled.h1`
   font-size: 48px;
-  background: var(--grey-100);
-  border-radius: 1rem;
-  border-top: var(--border-top);
+  // background: var(--grey-100);
+  // border-radius: 1rem;
+  // border-top: var(--border-top);
   margin-top: 0;
-  margin-bottom: 1rem;
+  // margin-bottom: 1rem;
   padding: 1.5rem;
-  width: 97%;
+  // width: 97%;
   text-align: center;
-  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  // -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  // box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   @media screen and (max-width: 800px) {
     font-size: 32px;
   }
@@ -65,7 +64,14 @@ export const Grid = styled.div`
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
   gap: 30px 30px;
-  width: 97%;
+  margin: 0 16px;
+  padding: 1rem;
+  background: var(--grey-300);
+  box-shadow: inset 3px 0 8px rgba(0, 0, 0, 0.15),
+    inset 0 3px 8px rgba(0, 0, 0, 0.15),
+    1px 2px 0 hsla(0, 0%, 90%, 0.9),
+    2px 1px 0 hsla(0, 0%, 90%, 0.9);
+  border: 1px solid var(--grey-300);
   @media screen and (max-width: 800px) {
     grid-template-columns: auto;
   }
@@ -77,10 +83,11 @@ export const WorkContainer = styled.div`
   border-top: var(--border-top-alt);
   width: 100%;
   height: 100%;
-  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+
   &:hover {
     transform: scale(1.05);
+    -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
 
     img {
       opacity: 1;
@@ -117,16 +124,10 @@ export const WorkImage = styled(Image)`
 
 export const Contact = styled.h1`
   font-size: 2.5rem;
-  background: var(--grey-100);
-  border-top: var(--border-top);
-  border-radius: 1rem;
   margin-top: 1rem;
   margin-bottom: 0;
   padding: 1.5rem;
-  width: 97%;
   text-align: center;
-  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
 `;
 
 export const ContactBtn = styled.button`

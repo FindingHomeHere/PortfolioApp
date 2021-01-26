@@ -8,13 +8,13 @@ const Hero = () => {
       <div className={styles['hero-container']}>
         <div className={styles['hero-content']}>
           <h2 className={styles['hero-heading']}>
-            Designer || Developer
+            Full stack JavaScript development
           </h2>
           <p className={styles['hero-text']}>
             Creating a beautiful space for you to show off
             who your brand is!
           </p>
-          <Link href="/about">
+          <Link href="/pricing">
             <button className={styles['hero-btn']}>
               Find out more!
             </button>

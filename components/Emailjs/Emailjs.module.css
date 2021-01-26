@@ -6,7 +6,10 @@
 
   justify-content: center;
   align-items: center;
-  background-color: var(--grey-200);
+  background-color: var(--grey-300);
+  background-image: url('../../public/images/notepad.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
 .grid {
@@ -15,6 +18,7 @@
   justify-content: center;
   align-items: center;
   background-color: var(--grey-100);
+  border-top: var(--border-top);
   width: 80%;
   padding: 1.5rem;
   box-sizing: border-box;
@@ -25,12 +29,6 @@
 
 .heading-box {
   width: 630px;
-  border-top: var(--border-top);
-  padding: 1rem 2rem;
-  border-radius: 1rem;
-  background-color: var(--grey-100);
-  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
 }
 
 .heading {

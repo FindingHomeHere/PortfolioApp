@@ -92,7 +92,7 @@ const AboutContent = () => (
           </div>
         </div>
         <div className={style['steps--contact']}>
-          <Link href="/work">
+          <Link href="/">
             <button className={style['contact--button']}>
               See some examples
             </button>
