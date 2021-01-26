@@ -45,8 +45,6 @@ const WorkInfo = () => {
                     <WorkImage
                       src={`/${el.image}.jpg`}
                       alt={`Screenshot of ${el.title}`}
-                      height={280}
-                      width={637}
                     />
                     <WorkItem>{el.title}</WorkItem>
                     <WorkDescription>

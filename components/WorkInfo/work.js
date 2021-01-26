@@ -115,8 +115,8 @@ export const WorkDescription = styled.p`
   padding: 0 2rem;
 `;
 
-export const WorkImage = styled(Image)`
-  height: 18rem;
+export const WorkImage = styled.img`
+  height: 11rem;
   width: 100%;
   opacity: 0.8;
   border-radius: 1rem 1rem 0 0;
