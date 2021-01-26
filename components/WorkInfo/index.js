@@ -43,7 +43,7 @@ const WorkInfo = () => {
                 >
                   <WorkContainer key={el.id}>
                     <WorkImage
-                      src={`/images/${el.image}.jpg`}
+                      src={`/${el.image}.jpg`}
                       alt={`Screenshot of ${el.title}`}
                       height={280}
                       width={637}
