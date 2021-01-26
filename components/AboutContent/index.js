@@ -51,7 +51,7 @@ const AboutContent = () => (
                 After the research, I assemble the data that
                 was collected, plan the approach, and build
                 an initial mockup of the site. This is done
-                within one day depending on project size.
+                in 1-3 days depending on project size.
               </p>
             </div>
             <div className={style['steps--box']}>
@@ -92,19 +92,12 @@ const AboutContent = () => (
           </div>
         </div>
         <div className={style['steps--contact']}>
-          <h2 className={style['contact--heading']}>
-            See some examples
-          </h2>
           <Link href="/work">
             <button className={style['contact--button']}>
-              view my work
+              See some examples
             </button>
           </Link>
         </div>
-      </div>
-    </div>
-    <div className={style['container']}>
-      <div className={style['steps']}>
         <div className={style['steps--title']}>
           <h1>Services</h1>
         </div>
@@ -167,23 +160,20 @@ const AboutContent = () => (
 
               <p className={style['steps--text']}>
                 We all know accidents happen, no matter the
-                cause, I am happy to look through your site
-                and fix any problems no matter the time. I
-                will prioritize emergency repairs above
-                everything, and work to fix the site by the
-                end of the day.
+                cause, I am happy to look through any site
+                that was built by me, and fix any problems
+                no matter the time. I will prioritize
+                emergency repairs above everything, and work
+                to fix the site by the end of the day.
               </p>
               <p>Starting at $80/hr.</p>
             </div>
           </div>
         </div>
         <div className={style['steps--contact']}>
-          <h2 className={style['contact--heading']}>
-            Schedule a meeting now!
-          </h2>
           <Link href="/contact">
             <button className={style['contact--button']}>
-              Contact
+              Schedule a meeting now!
             </button>
           </Link>
         </div>

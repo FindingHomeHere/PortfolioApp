@@ -1,10 +1,10 @@
 import AboutContent from '../components/AboutContent';
-import AboutMe from '../components/AboutMe';
+import AboutHero from '../components/AboutHero';
 
 export default function About() {
   return (
     <>
-      <AboutMe />
+      <AboutHero />
       <AboutContent />
     </>
   );

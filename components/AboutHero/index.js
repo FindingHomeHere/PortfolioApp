@@ -11,8 +11,7 @@ const Hero = () => {
             Get Started
           </h1>
           <p className={styles['hero-text']}>
-            Read about the process below, or get a quote
-            now!
+            Read about the process below, or get a quote now
           </p>
           <Link href="/contact">
             <button className={styles['hero-btn']}>

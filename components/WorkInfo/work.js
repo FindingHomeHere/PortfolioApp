@@ -3,18 +3,27 @@ import Image from 'next/image';
 
 export const Background = styled.div`
   display: flex;
-  min-height: 100vh;
+  position: relative;
+  min-height: 90vh;
   height: contain;
-  padding: 8rem 0 4rem 0;
+  padding: 8rem 0 2rem 0;
   justify-content: center;
   align-items: center;
-  background-color: var(--background-dark);
+  background-color: var(--grey-300);
+
+  @media screen and (max-width: 800px) {
+    padding: 0;
+    padding-bottom: 80px;
+  }
 `;
 
 export const Card = styled.div`
   display: flex;
+  position: relative;
   flex-direction: column;
-  background: rgba(255, 255, 255, 0.7);
+  background-color: var(--grey-100);
+  background-image: var(--background-texture);
+  border-top: var(--border-top);
   border-radius: 1rem;
   align-items: center;
   justify-content: space-between;
@@ -24,14 +33,18 @@ export const Card = styled.div`
   -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   @media screen and (max-width: 800px) {
-    width: 90vw;
+    top: 80px;
+    width: 100%;
+    border-radius: 0;
+    padding: 1rem;
   }
 `;
 
 export const Title = styled.h1`
-  font-size: 2.5rem;
-  background: white;
+  font-size: 48px;
+  background: var(--grey-100);
   border-radius: 1rem;
+  border-top: var(--border-top);
   margin-top: 0;
   margin-bottom: 1rem;
   padding: 1.5rem;
@@ -39,6 +52,12 @@ export const Title = styled.h1`
   text-align: center;
   -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  @media screen and (max-width: 800px) {
+    font-size: 32px;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 28px;
+  }
 `;
 
 export const Grid = styled.div`
@@ -55,6 +74,7 @@ export const Grid = styled.div`
 export const WorkContainer = styled.div`
   background: white;
   border-radius: 1rem;
+  border-top: var(--border-top-alt);
   width: 100%;
   height: 100%;
   -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
@@ -65,6 +85,12 @@ export const WorkContainer = styled.div`
     img {
       opacity: 1;
     }
+  }
+  @media screen and (max-width: 800px) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 12px;
   }
 `;
 
@@ -91,7 +117,8 @@ export const WorkImage = styled(Image)`
 
 export const Contact = styled.h1`
   font-size: 2.5rem;
-  background: white;
+  background: var(--grey-100);
+  border-top: var(--border-top);
   border-radius: 1rem;
   margin-top: 1rem;
   margin-bottom: 0;
@@ -103,20 +130,28 @@ export const Contact = styled.h1`
 `;
 
 export const ContactBtn = styled.button`
-  font-size: 1.5rem;
-  padding: 1rem 6rem;
+  font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
+  background: var(--primary-500);
+  color: var(--primary-100);
+  padding: 0.5rem 1rem;
+  // margin-bottom: 32px;
+  border: none;
   border-radius: 1rem;
-  background: white;
   cursor: pointer;
-  color: var(--base-color-primary);
-  outline: none;
-  border: 1px solid var(--base-color-primary);
+  -webkit-box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15),
+    inset 0 3px 2px hsla(256, 29%, 60%, 0.35);
+  transition: all 0.25s ease;
   &:hover {
-    background: var(--base-color-primary);
-    color: white;
-    -webkit-transform: translateY(-3px);
-    transform: translateY(-3px);
-    -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    color: var(--secondary-100);
+    transform: scale(1.02);
+    -webkit-box-shadow: 0 16px 1.5rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 16px 1.5rem rgba(0, 0, 0, 0.15);
+  }
+  &:active {
+    background-color: var(--primary-600);
+    -webkit-box-shadow: none;
+    box-shadow: none;
   }
 `;

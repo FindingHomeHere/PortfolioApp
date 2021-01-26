@@ -1,7 +1,7 @@
 .hero-container {
   display: flex;
   position: relative;
-  height: 100vh;
+  min-height: 900px;
   width: 100%;
   background: url('../../public/images/PJnight.jpg'),
     linear-gradient(
@@ -15,61 +15,73 @@
   align-items: center;
 }
 .hero-content {
-  height: 100%;
-  width: 100vw;
+  max-height: 612px;
+  max-width: 800px;
   backdrop-filter: blur(6px);
-  border-bottom: 2px solid var(--base-color-secondary);
-  background-color: rgba(0, 0, 0, 0.5);
+  /* border-bottom: 2px solid var(--primary-200); */
+  background: var(--grey-100);
   display: flex;
+  padding: 0 3rem;
+  border-top: var(--border-top);
+  border-radius: 1rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
 }
 .hero-heading {
-  font-size: 6rem;
-  color: white;
+  font-size: 72px;
+  color: var(--primary-800);
 }
 .hero-text {
-  font-size: 1.6rem;
-  color: white;
+  font-size: 24px;
+  color: var(--primary-800);
   font-family: 'Open Sans', sans-serif;
 }
 .hero-btn {
-  font-size: 1.6rem;
+  font-size: 24px;
   font-family: 'Open Sans', sans-serif;
-  background: rgba(0, 0, 0, 0.65);
-  backdrop-filter: blur(4px);
-  color: white;
-  border: 2px solid white;
-  padding: 1rem;
-  border-radius: 6px;
+  background: var(--primary-500);
+  color: var(--primary-100);
+  padding: 0.5rem 1rem;
+  margin-bottom: 32px;
+  border: none;
+  border-radius: 1rem;
   cursor: pointer;
+  -webkit-box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15),
+    inset 0 3px 2px hsla(256, 29%, 60%, 0.35);
   transition: all 0.25s ease;
 }
 .hero-btn:hover {
-  border: 2px solid var(--base-color-secondary);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  color: var(--secondary-100);
+  transform: scale(1.02);
+  -webkit-box-shadow: 0 16px 1.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 16px 1.5rem rgba(0, 0, 0, 0.15);
+}
+.hero-btn:active {
+  background-color: var(--primary-600);
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 @media screen and (max-width: 800px) {
   .hero-heading {
-    font-size: 5em;
+    font-size: 60px;
   }
   .hero-text {
-    font-size: 1.5em;
+    font-size: 16px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .hero-heading {
-    font-size: 4em;
+    font-size: 48px;
   }
   .hero-text {
-    font-size: 1em;
+    font-size: 12px;
   }
   .hero-btn {
     font-size: 1rem;

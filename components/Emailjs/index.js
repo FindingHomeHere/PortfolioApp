@@ -25,10 +25,12 @@ export default function ContactUs() {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          alert("Awesome! I'll get back to you soon!");
         },
         (error) => {
-          console.log(error.text);
+          alert(
+            'Oh no! something went wrong! Please try again!'
+          );
         }
       );
   }
@@ -47,16 +49,12 @@ export default function ContactUs() {
         </div>
         <form
           method="POST"
-          data-netlify="true"
+          action="/success"
           name="contact"
-          className={style['contact-form']}
           onSubmit={sendEmail}
+          className={style['contact-form']}
         >
-          <input
-            type="hidden"
-            name="form-name"
-            value="contact"
-          />
+          <input type="hidden" value="contact" />
           <div className={style['form']}>
             <input
               type="text"
@@ -121,11 +119,13 @@ export default function ContactUs() {
               </span>
             </label>
           </div>
-          <input
+          <button
             type="submit"
             value="Send"
             className={style['contact--button']}
-          />
+          >
+            Send
+          </button>
         </form>
       </div>
     </div>

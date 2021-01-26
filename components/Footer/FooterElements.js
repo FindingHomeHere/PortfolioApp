@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const FooterContainer = styled.footer`
-  background-color: #0c213d;
-  border-top: 2px solid #c7be5d;
+  background-color: var(--primary-800);
+  border-top: 2px solid var(--secondary-500);
 `;
 
 export const FooterWrap = styled.div`
@@ -44,13 +44,13 @@ export const SocialIcons = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 60px;
+  margin: 0 16px;
 `;
 
 export const SocialIconLink = styled.a`
   color: #fff;
   font-size: 24px;
   &:hover {
-    color: #c7be5d;
+    color: var(--secondary-500);
   }
 `;

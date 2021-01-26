@@ -11,11 +11,11 @@ export const SideBarContainer = styled.div`
   justify-content: center;
   background: linear-gradient(
     to bottom,
-    var(--base-color-primary),
+    var(--primary-800),
     rgba(12, 33, 61, 0.6)
   );
   backdrop-filter: blur(20px);
-  border-left: 2px solid #c7be5d;
+  border-left: 2px solid var(--primary-200);
   z-index: 999;
   transition: 0.3s ease-in-out;
   right: ${({ isOpen }) => (isOpen ? '0' : '-1000px')};
@@ -26,9 +26,9 @@ export const SideBarContainer = styled.div`
 `;
 
 export const CloseIcon = styled(IoClose)`
-  color: white;
+  color: var(--primary-100);
   &:hover {
-    color: #c7be5d;
+    color: var(--secondary-400);
     transition: 0.2s ease-in-out;
   }
 `;
@@ -57,18 +57,15 @@ export const SideBarLink = styled.h3`
   justify-content: center;
   font-size: 1.5rem;
   text-decoration: none;
-  list-style: none;
-  transition: 0.2s ease-in-out;
-  color: #fff;
+  // transition: 0.2s ease-in-out;
+  color: var(--primary-100);
   font-weight: bold;
   cursor: pointer;
   &:hover {
-    color: #c7be5d;
     -webkit-transform: translateY(-3px);
     transform: translateY(-3px);
     -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-    transition: all 0.2s ease-in-out;
   }
 `;
 
@@ -78,11 +75,14 @@ export const SideBarRoute = styled.a`
   outline: none;
   border: none;
   cursor: pointer;
+
+  padding: 0.75rem 1rem;
   transition: 0.2s ease-in-out;
   text-decoration: none;
   &:hover {
-    transition: 0.2s ease-in-out;
-    color: #c7be5d;
+    background-color: var(--secondary-600);
+    border-radius: 1.5rem;
+    color: var(--primary-100);
   }
 `;
 
@@ -104,21 +104,21 @@ export const SocialIcons = styled.div`
   text-align: center;
   &:hover {
     p {
-      color: #c7be5d;
+      color: var(--secondary-400);
     }
     svg {
-      color: #c7be5d;
+      color: var(--secondary-400);
     }
   }
 `;
 
 export const SocialIconLink = styled.a`
-  color: #fff;
+  color: var(--primary-100);
   font-size: 2rem;
 `;
 
 export const SocialLabel = styled.p`
-  color: #fff;
+  color: var(--primary-100);
   margin: 0;
   font-size: 16px;
 `;
